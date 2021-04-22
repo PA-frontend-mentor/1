@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #090b1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  width: 1000px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .details-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-color: #1b1938;
+  border-radius: 1rem 0 0 1rem;
+  padding: 4rem 7rem 0 3rem;
+}
+
+body main .details-wrapper h2 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+body main .details-wrapper p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 4rem;
+}
+
+body main .details-wrapper .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .details-wrapper .stats p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+}
+
+body main .details-wrapper .stats p::after {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: capitalize;
+  font-family: "Inter";
+  padding-top: 5px;
+  font-weight: 100;
+}
+
+body main .details-wrapper .stats p:nth-child(1)::after {
+  content: "companies";
+}
+
+body main .details-wrapper .stats p:nth-child(2)::after {
+  content: "templates";
+}
+
+body main .details-wrapper .stats p:nth-child(3)::after {
+  content: "queries";
+}
+
+body main .img-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(147, 46, 209, 0.5)), to(rgba(147, 46, 209, 0.5))), url(./images/image-header-desktop.jpg) center no-repeat;
+  background: linear-gradient(to bottom, rgba(147, 46, 209, 0.5), rgba(147, 46, 209, 0.5)), url(./images/image-header-desktop.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 0 1rem 1rem 0;
+  -webkit-transition: -webkit-box-flex 3s ease-in-out;
+  transition: -webkit-box-flex 3s ease-in-out;
+  transition: flex 3s ease-in-out;
+  transition: flex 3s ease-in-out, -webkit-box-flex 3s ease-in-out, -ms-flex 3s ease-in-out;
+}
+
+body main .img-wrapper:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(147, 46, 209, 0.6)), to(rgba(147, 46, 209, 0.6))), url(./images/image-header-desktop.jpg) center no-repeat;
+  background: linear-gradient(to bottom, rgba(147, 46, 209, 0.6), rgba(147, 46, 209, 0.6)), url(./images/image-header-desktop.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.-purple {
+  color: #aa5cdb;
+}
+
+@media only screen and (max-width: 1050px) {
+  body main {
+    width: 60%;
+    height: 75vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .details-wrapper {
+    padding: 4rem 3rem 0 3rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+  body main .details-wrapper .stats {
+    width: 80%;
+  }
+  body main .img-wrapper {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  * {
+    text-align: center;
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  body main {
+    width: 70%;
+  }
+  body main .details-wrapper {
+    padding: 1.5rem 3rem 0 3rem;
+  }
+  body main .details-wrapper span {
+    font-size: 22px;
+  }
+  body main .details-wrapper p {
+    margin-bottom: 2rem;
+  }
+  body main .details-wrapper .stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .details-wrapper .stats p {
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
